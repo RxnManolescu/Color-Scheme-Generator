@@ -1,0 +1,87 @@
+ *,
+ *::before,
+ *::after {
+    box-sizing: border-box;
+ }
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+ }
+ header {
+   height: 20vh;
+ }
+ main {
+   height: 80vh;
+ }
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    max-width: 700px;
+    gap: 1rem;
+ }
+
+ #color-picker {
+    width: 3.2rem;
+    height: 2.125rem;
+    border: .5px solid #D1D5DB;
+ }
+
+ #theme {
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    width: 312px;
+    color:#111827;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    padding: .5rem .8rem;
+ }
+
+ #submit-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    min-width: 123px;
+    color:#374151;
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    padding: .6rem .7rem;
+ }
+
+ .scheme-container {
+    /* border: 3px solid red; */
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 700px;
+    height: 95%;
+ }
+
+ .scheme-container-inner {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    min-width: 50px;
+ }
+
+ .scheme-container-single {
+    height: 95%;
+ }
+
+ .color-hex {
+    align-self: center;
+    font-size: .75rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #2B283A;
+ }
