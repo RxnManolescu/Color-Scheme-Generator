@@ -1,5 +1,5 @@
 const form = document.getElementById('form')
-const theme = document.getElementById('theme')
+
 const schemeContainer = document.querySelector('.scheme-container')
 
 
@@ -7,6 +7,7 @@ form.addEventListener('submit', function(e) {
     e.preventDefault()
     const colorValue = document.getElementById('color-picker').value
     const colorValueNoHash = colorValue.substring(1)
+    const theme = document.getElementById('theme')
     const themeNameValue = theme.value
 
 
@@ -36,10 +37,9 @@ form.addEventListener('submit', function(e) {
 })
 
 schemeContainer.addEventListener('click', function(e) {
-    e.preventDefault
+    e.preventDefault()
     const hexCode = e.target.dataset.hex
     if (hexCode) {
         navigator.clipboard.writeText(hexCode)
-        console.log('Copied to clipboard:',hexCode)
     }
 })
